@@ -1,0 +1,151 @@
+.mainImage {
+  width: 100%;
+  position: relative;
+  filter: blur(5px);
+  height: 800px;
+}
+
+.textmain1 {
+  position: absolute;
+  top: 30px;
+  left: 250px;
+  width: 50%;
+  display: flex;
+  flex-direction: column; /* Располагаем элементы в колонку */
+  align-items: flex-start; /* Выравниваем элементы по левому краю */
+}
+
+.textPrice {
+  display: flex;
+  justify-content: center;
+  color: azure;
+  margin-top: 5px;
+}
+
+.textmain2 {
+  position: absolute;
+  top: 30px;
+  right: 250px;
+  width: 50%;
+  display: flex;
+  flex-direction: column; /* Располагаем элементы в колонку */
+  align-items: flex-end; /* Выравниваем элементы по правому краю */
+}
+
+.ArenaImage {
+  width: 200px;
+  height: 250px;
+  border-radius: 5px;
+  margin-top: -15px;
+}
+
+.PSImage {
+  width: 200px;
+  height: 250px;
+  border-radius: 5px;
+  margin-top: -15px;
+}
+
+.info1 {
+  color: azure;
+  margin-top: 10px;
+}
+
+.info1 p {
+  margin-top: -10px;
+}
+
+.info2 {
+  color: azure;
+  margin-top: 10px;
+}
+
+.info2 p {
+  margin-top: -10px;
+}
+
+.icon {
+  color: aqua;
+  font-size: 24px;
+  vertical-align: middle;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+.roundedContainerPrice {
+  background: rgba(0, 0, 0, 0.7); /* Затемненный фон */
+  border-radius: 10px; /* Закругленные углы */
+  padding: 5px 15px 15px 15px;
+  width: 400px; /* Установите фиксированную ширину */
+}
+
+.reserveButPrice {
+  background-color: #00d7ea; /* Фон кнопки */
+  color: white; /* Цвет текста */
+  padding: 20px 70px; /* Внутренние отступы */
+  border-radius: 10px; /* Закругленные углы */
+  font-size: 25px; /* Размер текста */
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  position: absolute;
+  bottom: 100px; /* Расположите кнопку под контейнерами */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.reserveButPrice:hover {
+  background-color: #157a87; /* Фон кнопки при наведении */
+}
+
+.prices-content {
+  position: relative;
+  z-index: 1;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Убедитесь, что модальное окно выше других элементов */
+}
+
+.modal-container {
+  background: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон */
+  border-radius: 10px;
+  position: relative;
+  max-width: 500px; /* Ограничиваем максимальную ширину контейнера */
+  width: 100%; /* Устанавливаем ширину в 100% */
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-body form {
+  display: flex;
+  flex-direction: column;
+  margin-top: -30px;
+}
+
+.modal-body input,
+.modal-body select {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+}

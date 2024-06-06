@@ -1,0 +1,161 @@
+.mainContent {
+    position: relative;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  
+  .mainImage {
+    width: 100%;
+    position: relative;
+    filter: blur(5px);
+    height: 800px;
+  }
+  
+  .textmain {
+    position: absolute;
+    top: 80px;
+    left: 150px;
+    width: 50%;
+    display: flex;
+    flex-direction: column; /* Располагаем элементы в колонку */
+    align-items: flex-start; /* Выравниваем элементы по левому краю */
+  }
+  
+  .text {
+    text-align: left;
+    color: azure;
+    margin-bottom: 20px; /* Добавляем отступ снизу для текста */
+    font-size: 60px;
+  }
+  
+  .perIcon {
+    color: #5bc8fb;
+    margin-right: 1px;
+  }
+
+  .roundedContainer {
+    background: rgba(0, 0, 0, 0.7); /* Затемненный фон */
+    border-radius: 15px; /* Закругленные углы */
+    padding: 20px; /* Внутренние отступы */
+  }
+
+  .iconTextContainer {
+    display: flex;
+    align-items: center; /* Центрируем иконку и текст по вертикали */
+  }
+  
+  .perText {
+    font-size: 1.3rem; /* Размер текста для span */
+    color: rgb(255, 255, 255);
+    margin-right: 70px;
+  }
+
+  .secText {
+    font-size: 1.5rem; /* Размер текста для span */
+    color: rgb(255, 255, 255);
+  }
+
+  .reserveBut {
+    background-color: #00d7ea; /* Фон кнопки */
+    color: white; /* Цвет текста */
+    padding: 20px 70px; /* Внутренние отступы */
+    border-radius: 10px; /* Закругленные углы */
+    font-size: 25px; /* Размер текста */
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+
+  .reserveBut:hover {
+    background-color: #157a87; /* Фон кнопки при наведении */
+  }
+
+  .locationText {
+    color:azure;
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 25px;
+    margin-left: 5px;
+    font-family: "PT Sans Narrow", sans-serif;
+  }
+
+  .modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color:rgb(0, 0, 0, .8);
+    z-index: 100;
+  }
+
+  .modal .active {
+    display: block;
+  }
+
+  .modal-container {
+    display: flex;
+    width: 100%;
+    height: 80%;
+  }
+
+  .modal-body {
+    margin: auto;
+    width: 500px;
+    background-color:azure;
+    border-radius:10px;
+    text-align: center;
+    padding: 30px 15px 25px 15px;
+    position: relative;
+  }
+
+  .modal-body p {
+    font-size: 28px;
+    font-family: Montserrat;
+    font-weight: 600;
+    color: #222620;
+  
+  }
+
+  .modal-body input {
+    display: block;
+    margin: 25px auto 0px auto;
+    width: 330px;
+    padding: 17px 20px;
+    background-color:azure;
+    border-radius:10px;
+    border: none;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 18px;
+    color:#89909F;
+  }
+
+  .modal-body input:focus {
+    outline: none;
+  }
+
+  .modal-body button {
+    cursor: pointer;
+    display: block;
+    width: 330px;
+    margin: 60px auto 0px auto;
+    padding: 20px 0px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 16px;
+    border:none;
+    color:#fff;
+    border-radius:10px;
+    background-color:aqua;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 21px;
+    cursor:pointer;
+  }
